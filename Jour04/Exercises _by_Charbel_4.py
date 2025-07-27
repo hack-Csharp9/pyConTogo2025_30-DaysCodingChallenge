@@ -105,4 +105,76 @@ list_test =  ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
 result = '# '.join(list_test)
 print(result)
 # 33)
-print("I am enjoying this challenge.\n I just wonder what is next.")
+print("I am enjoying this challenge.\nI just wonder what is next.")
+# 34)
+# Use \t to create tabs for column alignment
+print("Name\t\tAge\tCountry\t\tCity")
+print("Asabeneh\t250\tFinland\t\tHelsinki")
+# 35)
+radius = 10
+area = 3.14 * radius ** 2
+
+# Method 1: Using f-strings (recommended)
+print(f"radius = {radius}")
+print(f"area = 3.14 * radius ** 2")
+print(f"The area of a circle with radius {radius} is {area:.0f} meters square.")
+
+print()  # Empty line for separation
+
+# Method 2: Using .format() method
+print("radius = {}".format(radius))
+print("area = 3.14 * radius ** 2")
+print("The area of a circle with radius {} is {:.0f} meters square.".format(radius, area))
+
+print()  # Empty line for separation
+
+# Method 3: Using % formatting (older style)
+print("radius = %d" % radius)
+print("area = 3.14 * radius ** 2")
+print("The area of a circle with radius %d is %.0f meters square." % (radius, area))
+# 36)
+a = 8
+b = 6
+
+# Calculate all operations
+addition = a + b
+subtraction = a - b
+multiplication = a * b
+division = a / b
+modulus = a % b
+floor_division = a // b
+exponentiation = a ** b
+
+# Method 1: Using f-strings
+print("Using f-strings:")
+print(f"{a} + {b} = {addition}")
+print(f"{a} - {b} = {subtraction}")
+print(f"{a} * {b} = {multiplication}")
+print(f"{a} / {b} = {division:.2f}")
+print(f"{a} % {b} = {modulus}")
+print(f"{a} // {b} = {floor_division}")
+print(f"{a} ** {b} = {exponentiation}")
+
+print()  # Empty line for separation
+
+# Method 2: Using .format() method
+print("Using .format() method:")
+print("{} + {} = {}".format(a, b, addition))
+print("{} - {} = {}".format(a, b, subtraction))
+print("{} * {} = {}".format(a, b, multiplication))
+print("{} / {} = {:.2f}".format(a, b, division))
+print("{} % {} = {}".format(a, b, modulus))
+print("{} // {} = {}".format(a, b, floor_division))
+print("{} ** {} = {}".format(a, b, exponentiation))
+
+print()  # Empty line for separation
+
+# Method 3: Using % formatting
+print("Using % formatting:")
+print("%d + %d = %d" % (a, b, addition))
+print("%d - %d = %d" % (a, b, subtraction))
+print("%d * %d = %d" % (a, b, multiplication))
+print("%d / %d = %.2f" % (a, b, division))
+print("%d %% %d = %d" % (a, b, modulus))  # Note: %% to display literal %
+print("%d // %d = %d" % (a, b, floor_division))
+print("%d ** %d = %d" % (a, b, exponentiation))
